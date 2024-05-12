@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/goapp:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/goapp:${{ github.ref_name }}
